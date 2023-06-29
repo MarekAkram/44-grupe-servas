@@ -1,0 +1,22 @@
+{
+  "name": "44-grupe-service-plat",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "client": "dead-server --host=localhost --port=5505"
+    "server": "nodemon ./dist",
+    "ts": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akram",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "dead-server": "^1.0.9",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.6"
+  }
+}
