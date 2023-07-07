@@ -100,7 +100,7 @@ file.readPublicBinary = async (trimmedFilePath: string): Promise<[boolean, strin
  */
 file.update = async (dir: string, fileName: string, content: any): Promise<[boolean, string | Error]> => {
     let fileDescriptor = null;
-    try {
+    try { 
         const filePath = file.fullPath(dir, fileName);
         fileDescriptor = await fs.open(filePath, 'r+');
         await fileDescriptor.truncate();
